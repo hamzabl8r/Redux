@@ -15,7 +15,7 @@ function Todo({ todo }) {
 
   return (
     <div
-      className="todo"
+      className={todo.isCompleted ? "todo":"uncompleted-todo"}
       style={{ textDecoration: todo.isCompleted ? 'line-through' : '' }}
     >
       {isEditing ? (
